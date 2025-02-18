@@ -1,4 +1,10 @@
-// const main = ()=> {
-//     return 
-    
-//     }
+const Main = () => {
+    return (
+        <main>
+
+        </main>
+    )
+
+}
+
+export default Main
