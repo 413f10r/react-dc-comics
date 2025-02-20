@@ -3,8 +3,11 @@
 }
 
 
+
+/* -----settings------- */
 a {
     text-decoration: none;
+
 }
 
 ul,
@@ -23,11 +26,12 @@ html {
 }
 
 
-/* main */
+
+/* -------main----------- */
 .containerBlack {
     background-color: black;
     color: white;
-    height: 15vh;
+    height: 20vh;
     text-align: start;
     padding: 50px;
     font-size: 1.7rem;
@@ -36,27 +40,32 @@ html {
 .BluContainer {
     background-color: var(--mainColor);
     color: white;
-    height: 15vh;
+    height: 20vh;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
 }
 
 
 
-/****footer****/
+/*-------footer-------*/
+
 footer {
     background-image: url(./assets/img/footer-bg.jpg);
-    
     background-size: cover;
 }
 
-.footerLogo {
+.logoFooter {
     background-image: url("./assets/img/dc-logo-bg.png");
     background-repeat: no-repeat;
     background-position: right;
     padding: 2rem;
-    padding-left: 8rem;
+    padding-left: 5rem;
     display: flex;
-    width: 90%;
-  }
+    width: 95%;
+}
 
 .externalLink {
     display: flex;
@@ -65,6 +74,41 @@ footer {
     color: white;
 }
 
-.titleFooter {
-    color: white;
+.externalLink,
+a {
+    color: lightgray;
 }
+
+
+.externalLink,
+a,
+.titleFooter {
+    color: lightgray;
+
+}
+
+.backgroundFooter {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.followUs,
+.button {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.linkSocial {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* aggiusta footer con space-araoun o beetwen,
+ sistema i div  nel follow us e btn */
