@@ -42,12 +42,20 @@ html {
     color: white;
     height: 20vh;
     align-items: center;
-}
-.icons{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    
 }
 
+.BluContainer img{
+    height: 2rem ;
+   padding-left: 3rem;
+
+}
+
+.BluContainer p{
+    padding-left: 0.5rem; 
+}
 
 
 /*-------footer-------*/
@@ -104,11 +112,19 @@ a,
 
 .linkSocial {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
-    align-items: center;
+    /* align-items: center; */
+}
+.linkSocial, a {
+    justify-content: space-between;
 }
 
+.button{
+    border: solid 2px;
+    border-color: var(--mainColor);
+    padding: 10px;
+}
 
 /* aggiusta footer con space-araoun o beetwen,
  sistema i div  nel follow us e btn */
