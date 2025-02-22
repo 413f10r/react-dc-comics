@@ -1,11 +1,15 @@
 import logo from "../assets/img/dc-logo.png";
-
+import NavBar from "./NavBar";
+import navBar from "./NavBar";
 
 const Header = () => {
     return (
         <header>
 
-            <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+< NavBar/>
+
+
+            {/* <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
                 <a className="navbar-brand" href="#">
                     <img src={logo} alt="DC Logo" height="40" />
                 </a>
@@ -21,7 +25,7 @@ const Header = () => {
                     <li className="nav-item"><a className="nav-link text-dark" href="#">NEWS</a></li>
                     <li className="nav-item"><a className="nav-link text-dark" href="#">SHOP</a></li>
                 </ul>
-            </nav>
+            </nav> */}
 
 
 
