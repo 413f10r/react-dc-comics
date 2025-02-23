@@ -6,13 +6,11 @@ import Comics from "./data/comics"
 
 function App() {
 
-  const links = Links
-  const comics = Comics
 
   return (
     <>
-      <Header links={links} />
-      <Main comics={comics} />
+      <Header links={Links} />
+      <Main comics={Comics} />
       <Footer />
     </>
   )
