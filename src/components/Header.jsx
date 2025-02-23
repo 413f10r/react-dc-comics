@@ -1,36 +1,15 @@
-import logo from "../assets/img/dc-logo.png";
-import NavBar from "./NavBar";
-import navBar from "./NavBar";
+import logo from "../assets/img/dc-logo.png"
+import Navbar from "./Navbar"
 
-const Header = () => {
+const Header = (props) => {
+
     return (
-        <header>
-
-< NavBar/>
-
-
-            {/* <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
-                <a className="navbar-brand" href="#">
-                    <img src={logo} alt="DC Logo" height="40" />
-                </a>
-                <ul className="navbar-nav ms-auto">
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">CHARACTERS</a></li>
-                    <li className="nav-item"><a className="nav-link text-primary border-bottom border-primary" href="#">COMICS</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">MOVIES</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">TV</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">GAMES</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">COLLECTIBLES</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">VIDEOS</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">FANS</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">NEWS</a></li>
-                    <li className="nav-item"><a className="nav-link text-dark" href="#">SHOP</a></li>
-                </ul>
-            </nav> */}
-
-
-
-
-        </header >
+        <header className="container d-flex justify-content-between align-items-center py-3">
+            <figure>
+                <img src={logo} alt="logo" />
+            </figure>
+            <Navbar links={props.links} />
+        </header>
     )
 
 }

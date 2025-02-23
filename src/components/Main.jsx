@@ -1,38 +1,90 @@
-import digitalComics from "../assets/img/buy-comics-digital-comics.png"
-import dcMerchandise from "../assets/img/buy-comics-merchandise.png"
+import digital from "../assets/img/buy-comics-digital-comics.png"
+import merchandise from "../assets/img/buy-comics-merchandise.png"
 import subscriptions from "../assets/img/buy-comics-subscriptions.png"
 import shopLocator from "../assets/img/buy-comics-shop-locator.png"
-import dcPowerVisa from "../assets/img/buy-dc-power-visa.svg"
+import visa from "../assets/img/buy-dc-power-visa.svg"
+import ListaFumetti from "./ListaFumetti"
 
+const Main = (props) => {
 
-const Main = () => {
     return (
         <main>
-            <section className="containerBlack">
-                <p> __Content Goes Here__ </p>
-            </section>
+            <div className="jumbotron"></div>
+            <ListaFumetti comics={props.comics} />
+            <div className="bg-primary py-4">
+                <div className="container d-flex  justify-content-between py-3">
+                    <div className="d-flex align-items-center gap-3">
+                        <img src={digital} height={"80px"} alt="logo" />
+                        <p>DIGITAL COMICS</p>
+                    </div>
+                    <div className="d-flex align-items-center gap-3">
+                        <img src={merchandise} height={"80px"} alt="logo" />
+                        <p>DC MERCHANDISE</p>
+                    </div>
+                    <div className="d-flex align-items-center gap-3">
+                        <img src={subscriptions} height={"80px"} alt="logo" />
+                        <p>SUBSCRIPTION</p>
+                    </div>
+                    <div className="d-flex align-items-center gap-3">
+                        <img src={shopLocator} height={"80px"} alt="logo" />
+                        <p>SHOP LOCATOR</p>
+                    </div>
+                    <div className="d-flex align-items-center gap-3">
+                        <img src={visa} height={"60px"} alt="logo" />
+                        <p>VISA</p>
+                    </div>
+                </div>
 
-            <section className="BluContainer">
-
-                <img src={digitalComics} alt="" />
-                <p>DIGITAL COMICS</p>
-                <img src={dcMerchandise} alt="" />
-                <p>DC MERCANDISE</p>
-                <img src={subscriptions} alt="" />
-                <p>SUBSCRIPTION</p>
-                <img src={shopLocator} alt="" />
-                <p>COMICS SHOP LOCATION</p>
-                <img src={dcPowerVisa} alt="" />
-                <p>DC POWER VISA</p>
-
-            </section>
-
+            </div>
         </main>
     )
-
 }
 
 export default Main
+
+
+
+
+
+
+
+
+
+// import digitalComics from "../assets/img/buy-comics-digital-comics.png"
+// import dcMerchandise from "../assets/img/buy-comics-merchandise.png"
+// import subscriptions from "../assets/img/buy-comics-subscriptions.png"
+// import shopLocator from "../assets/img/buy-comics-shop-locator.png"
+// import dcPowerVisa from "../assets/img/buy-dc-power-visa.svg"
+
+
+// const Main = () => {
+//     return (
+//         <main>
+//             <section className="containerBlack">
+//                 <p> __Content Goes Here__ </p>
+//             </section>
+
+//             <section className="BluContainer">
+
+//                 <img src={digitalComics} alt="" />
+//                 <p>DIGITAL COMICS</p>
+//                 <img src={dcMerchandise} alt="" />
+//                 <p>DC MERCANDISE</p>
+//                 <img src={subscriptions} alt="" />
+//                 <p>SUBSCRIPTION</p>
+//                 <img src={shopLocator} alt="" />
+//                 <p>COMICS SHOP LOCATION</p>
+//                 <img src={dcPowerVisa} alt="" />
+//                 <p>DC POWER VISA</p>
+
+//             </section>
+
+//         </main>
+//     )
+
+// }
+
+// export default Main
 
 
 
