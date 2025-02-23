@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header links={links} />
-      <Main comics={comics}/>
+      <Main comics={comics} />
       <Footer />
     </>
   )

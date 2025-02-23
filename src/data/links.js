@@ -1,4 +1,4 @@
-const navLinks = [
+const Links = [
     { id: 1, text: 'Characters', url: '#', current: false },
     { id: 2, text: 'Comics', url: '#', current: true },
     { id: 3, text: 'Movies', url: '#', current: false },
@@ -10,3 +10,4 @@ const navLinks = [
     { id: 9, text: 'News', url: '#', current: false },
     { id: 10, text: 'Shop', url: '#', current: false },
 ];
+export default Links;

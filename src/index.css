@@ -56,10 +56,11 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   padding-block: 4rem;
+  gap: 1em;
 }
 
 .fumetto {
-  flex-basis: calc(90% / 6);
+  flex-basis: calc(90% / 6 - 1em);
 }
 
 
@@ -69,8 +70,7 @@ p {
   position: relative;
 }
 
-.titolo-listino
-button {
+.titolo-listino button {
   position: absolute;
   top: -50px;
   background-color: #0282f9;
